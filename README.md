@@ -33,12 +33,3 @@ Note:
 ##### 1/ By Pass the Login Page to access Lead Capture Form Page
 ##### 2/ Fill the form with given Test data
 ##### 3/ Verify the form has been submit successfully by calling API to get form list
-
-
-# Answer the Question
-To implement automated testing on CI/CD process, we can follow those steps below:
-1 - Make the Test Framework (TF) executable by CMD
-2 - Define the CI/CD process again to determine which Phase we should trigger the Automation Test, it needs to include the following Team's capabilities
-3 - Find good CI/CD tool that we can integration our TF, Have Test reporting, Schedule, ... (Few popular Tool: Jenkins, TeamCity, ...)
-4 - Setup one Host machine with CI/CD tool your choice and Repository for TF If you need to run the Test independently, Create new Job schedule nightly to execute the test on this machine
-5 - To notify the Test result we can use the default notify method of CI/CD tool, usually by Email method. The other way we can integrate with Chat Platform like Slack.

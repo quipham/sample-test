@@ -1,0 +1,15 @@
+# Intellij
+*.iml
+*.iws
+*.idea
+*.idea/workspace.xml
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/
+
+# Project
+reports/
