@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [CustomerSuite]">
+  <listeners>
+    <listener class-name="com.onsolve.exercise.manage.TestListener"/>
+  </listeners>
+  <test name="CustomerTest">
+    <classes>
+      <class name="com.onsolve.exercise.runner.LeadFormCaptureTest"/>
+    </classes>
+  </test> <!-- CustomerTest -->
+</suite> <!-- Failed suite [CustomerSuite] -->

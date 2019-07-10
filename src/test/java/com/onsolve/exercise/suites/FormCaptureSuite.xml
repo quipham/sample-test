@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="CustomerSuite">
+    <listeners>
+        <listener class-name="com.onsolve.exercise.manage.TestListener"/>
+    </listeners>
+
+    <test name="CustomerTest">
+        <classes>
+            <class name="com.onsolve.exercise.runner.LeadFormCaptureTest"/>
+        </classes>
+    </test>
+</suite>
