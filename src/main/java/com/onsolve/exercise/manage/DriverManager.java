@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 
 public class DriverManager {
-    private static ConcurrentHashMap<String, WebDriver> driverPool = new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<String, WebDriver> driverPool = new ConcurrentHashMap<>();
 
     public static synchronized WebDriver getDriver() {
         return driverPool.get(Thread.currentThread().getName());
@@ -22,7 +22,7 @@ public class DriverManager {
     public static synchronized void initWebDriver(String browser) {
         WebDriver driver;
         if (browser.equals(Browser.CHROME)) {
-            System.setProperty("webdriver.chrome.driver", Helper.getRootDir() + "/driver/chromedriver");
+            System.setProperty("webdriver.chrome.driver", Helper.getResourceDir() + "/driver/chromedriver.exe");
             driver = new ChromeDriver();
             driverPool.put(Thread.currentThread().getName(), driver);
             driver.manage().timeouts().implicitlyWait(12000, TimeUnit.MILLISECONDS);

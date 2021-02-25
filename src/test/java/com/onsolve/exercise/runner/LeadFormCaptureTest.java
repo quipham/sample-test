@@ -3,7 +3,7 @@ package com.onsolve.exercise.runner;
 import com.aventstack.extentreports.Status;
 import com.mashape.unirest.http.exceptions.UnirestException;
 import com.onsolve.exercise.model.LeadFormDTO;
-import com.onsolve.exercise.testbase.AbstractTest;
+import com.onsolve.exercise.hooks.AbstractTest;
 import org.testng.annotations.Test;
 import org.xml.sax.SAXException;
 

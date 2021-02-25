@@ -2,7 +2,7 @@
 
 <suite name="CustomerSuite">
     <listeners>
-        <listener class-name="com.onsolve.exercise.manage.TestListener"/>
+        <listener class-name="com.onsolve.exercise.hooks.TestListener"/>
     </listeners>
 
     <test name="CustomerTest">

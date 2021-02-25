@@ -14,15 +14,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ExtentManager {
-    private static Logger logger = LogManager.getLogger(ExtentManager.class);
+    private static final Logger logger = LogManager.getLogger(ExtentManager.class);
     private static ExtentReports extent;
-    private static Map<String, ExtentTest> extentPool = new HashMap<>();
+    private static final Map<String, ExtentTest> extentPool = new HashMap<>();
     private static Platform platform;
-    private static String reportFileName = Helper.getCurrentTime() + ".html";
-    private static String macPath = System.getProperty("user.dir") + "/reports";
-    private static String windowsPath = System.getProperty("user.dir") + "\\reports";
-    private static String macReportFileLoc = macPath + "/" + reportFileName;
-    private static String winReportFileLoc = windowsPath + "\\" + reportFileName;
+    private static final String reportFileName = Helper.getCurrentTime() + ".html";
+    private static final String macPath = System.getProperty("user.dir") + "/reports";
+    private static final String windowsPath = System.getProperty("user.dir") + "\\reports";
+    private static final String macReportFileLoc = macPath + "/" + reportFileName;
+    private static final String winReportFileLoc = windowsPath + "\\" + reportFileName;
 
     public static ExtentReports getInstance() {
         if (extent == null)
@@ -38,7 +38,7 @@ public class ExtentManager {
         return extentPool.get(Thread.currentThread().getName());
     }
 
-    static ExtentReports createInstance() {
+    public static ExtentReports createInstance() {
         platform = getCurrentPlatform();
         String fileName = getReportFileLocation(platform);
         ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
