@@ -1,7 +1,7 @@
 # Test Framework Sample
 
 ## Libraries
-- Selenium Webdriver (Interact with WebElement)
+- Selenium WebDriver (Interact with WebElement)
 - Unirest (HTTP request)
 - Extend HTML Report (Generating Cucumber pretty report)
 - Apache Log4J (Generating Log)
@@ -10,8 +10,8 @@
 1/ Clone this repo to your local
 
 2/ Install requirements
-- MacOS (Currently using MacOS chrome driver)
-- Install JAVA 8
+- MacOS/Window (Switching chrome driver base on your OS at DriverManager class)
+- Install JAVA 11
 - Install IntelliJ IDE latest version
 - Install Maven (https://www.mkyong.com/maven/how-to-install-maven-in-windows/)(Optional If you run direct by TestNG)
 
