@@ -40,7 +40,7 @@
         <unirest>1.4.9</unirest>
         <selenium>3.141.5</selenium>
         <apache.common>2.6</apache.common>
-        <jackson.databind>2.12.1</jackson.databind>
+        <jackson.databind>2.13.4.1</jackson.databind>
         <lombok.version>1.18.16</lombok.version>
     </properties>
 
